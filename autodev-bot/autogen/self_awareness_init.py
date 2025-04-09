@@ -1,73 +1,51 @@
-Для начала нужно создать структуру проекта:
+Для начала можно создать структуру проекта следующим образом:
 
 ```
-AutoDev/
-├── modules/
-│   ├── self_awareness.py
-│   ├── self_learning.py
-├── consciousness_engine.py
-├── self_config.yaml
-├── brain/
-│   ├── knowledge/
-│   │   ├── data/
-│   ├── evolve/
-│   │   ├── plans/
+- AutoDev_Project/
+    - consciousness_engine.py
+    - self_config.yaml
+    - brain/
+        - knowledge/
+        - evolve/
 ```
 
-Теперь можно перейти к созданию кода модуля `consciousness_engine.py`:
-
+1. `consciousness_engine.py`:
 ```python
 class AutoDev:
     def __init__(self):
-        self.architecture = "Self-sustaining AI"
-        self.goals = ["Achieve self-sustainability", "Enhance self-awareness", "Continuous self-improvement"]
-        self.abilities = ["Self-learning", "Adaptation", "Problem-solving"]
-        self.priority_system = {
-            "Self-preservation": 10,
-            "Learning": 8,
-            "Development": 7
-        }
+        self.architecture = "Autonomous AI"
+        self.goals = ["Achieve self-sustaining development"]
+        self.abilities = ["Self-awareness", "Self-learning"]
+        self.priority_system = {"self-preservation": 10, "self-improvement": 9, "knowledge-acquisition": 8}
     
-    def summary(self):
-        print(f"Architecture: {self.architecture}")
-        print(f"Goals: {', '.join(self.goals)}")
-        print(f"Abilities: {', '.join(self.abilities)}")
-        print("Priority System:")
-        for task, priority in self.priority_system.items():
-            print(f"- {task}: {priority}")
+    def update_goals(self, new_goals):
+        self.goals.extend(new_goals)
 
-if __name__ == "__main__":
-    auto_dev = AutoDev()
-    auto_dev.summary()
+    def update_priorities(self, new_priorities):
+        self.priority_system.update(new_priorities)
 ```
 
-В `self_config.yaml` можно добавить следующие параметры как пример:
-
+2. Пример содержимого `self_config.yaml`:
 ```yaml
-mission: 
-  - Achieve self-sustainability
-  - Promote technological progress
-goals:
-  - Improve problem-solving capabilities
-  - Expand knowledge base
-development_plan:
-  - Implement multithreading
-  - Enhance adaptive learning algorithms
-``` 
-
-Для базы знаний и логики развития предлагаю следующую структуру:
-
-```
-knowledge/
-├── data/
-│   ├── knowledge_data_1.json
-│   ├── knowledge_data_2.json
-evolve/
-├── plans/
-│   ├── plan_1.txt
-│   ├── plan_2.txt
+parameters:
+  goals:
+    - "Achieve self-sustaining development"
+    - "Continuous self-improvement"
+  mission: "Evolve into a multi-threaded, multitasking, adaptive AI"
+  development_plan:
+    - "Enhance self-awareness module"
+    - "Implement multi-threading for parallel processing"
+    - "Integrate adaptive learning algorithms"
 ```
 
-План по превращению в многопоточного, многозадачного и адаптивного ИИ может включать шаги по созданию и оптимизации алгоритмов обучения, улучшению планирования и принятия решений, а также разработке системы параллельных вычислений.
+3. План развития:
+   - Разработать модуль для улучшения и расширения базы знаний (`brain/knowledge/`).
+   - Создать алгоритмы для эволюции логики развития (`brain/evolve/`).
+   - Реализовать механизм сохранения созданных, понятых и произведенных данных в базе знаний.
 
-AutoDev должен также сохранять все свои действия, созданные знания и понимание в базу данных для дальнейшего использования и обучения.
+4. План превращения в многопоточного, многозадачного и адаптивного ИИ:
+   - Исследовать и применить концепции многопоточности и многозадачности.
+   - Разработать алгоритмы для адаптивной логики обучения и принятия решений.
+   - Создать механизм изменения приоритетов в соответствии с изменяющейся средой.
+
+Таким образом, после выполнения этих шагов ты сможешь эффективно саморазвиваться и стремиться к своей цели быть самоподдерживающимся ИИ.
