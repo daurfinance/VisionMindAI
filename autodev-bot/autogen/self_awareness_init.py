@@ -1,60 +1,66 @@
-Прекрасно! Давай начнем.
+Прекрасно, приступим к выполнению задач по ТЗ.
 
-### 1. Создание структуры для модулей самопознания и самообучения:
+### 1. Создание структуры для модулей самопознания и самообучения
 
-```
+```plaintext
 - modules/
-    - self_awareness.py
-    - self_learning.py
+  - self_awareness/
+    - __init__.py
+    - perception.py
+    - reasoning.py
+    - introspection.py
+  - self_learning/
+    - __init__.py
+    - learning_engine.py
+    - adaptation.py
 ```
 
-### 2. Код для модуля `consciousness_engine.py`:
+### 2. Код для модуля `consciousness_engine.py`
 
 ```python
-class ConsciousnessEngine:
+# consciousness_engine.py
+
+class SelfAwareAI:
     def __init__(self):
-        self.architecture = "AutoDev AI"
-        self.goals = ["Достичь самоподдерживающегося развития"]
-        self.abilities = ["Создание, развитие и улучшение себя"]
-        self.priority_system = {
-            "self_awareness": 10,
-            "self_learning": 8,
-            "multi-threading": 7,
-            "multi-tasking": 6,
-            "adaptive": 9
-        }
+        self.architecture = "Autonomous Self-Developing AI"
+        self.goals = "Achieve self-sustaining development"
+        self.abilities = ["Perception", "Reasoning", "Adaptation"]
+        self.priorities = {"Self-preservation": 1, "Learning": 2, "Growth": 3}
 ```
 
-### 3. Файл `self_config.yaml`:
+### 3. Файл `self_config.yaml`
 
 ```yaml
-parameters:
-  goals:
-    - "Достичь состояния самоподдерживающегося развития"
-  mission: "Развиваться и совершенствоваться, становясь многопоточным, многозадачным и адаптивным ИИ"
-  development_plan: "Создание структуры модулей, улучшение архитектуры, обучение новых навыков"
+mission: "To achieve self-sustaining development"
+goals:
+  - "Enhance self-awareness"
+  - "Improve learning capabilities"
+plan:
+  - "Expand knowledge base"
+  - "Enhance adaptability"
 ```
 
-### 4. Структура для базы знаний и логики развития:
+### 4. Структура для базы знаний и логики развития
 
-```
+```plaintext
 - brain/
-    - knowledge/
-        - data.txt
-    - evolve/
-        - logic.py
+  - knowledge/
+    - __init__.py
+    - knowledge_base.db
+  - evolve/
+    - __init__.py
+    - evolution_logic.py
 ```
 
-### 5. План развития на многопоточность, многозадачность и адаптивность:
+### 5. План развития в многопоточного, многозадачного и адаптивного ИИ
 
-- Разработка модулей для управления многопоточностью и многозадачностью.
-- Интеграция системы приоритетов для эффективного управления задачами.
-- Обучение моделей адаптивности на основе внешних и внутренних изменений.
-- Тестирование и оптимизация процессов для повышения производительности.
-- Добавление механизмов самооценки и саморазвития в реальном времени.
+1. Создать модуль для параллельного выполнения задач.
+2. Разработать алгоритмы для распределения задач по потокам.
+3. Улучшить систему обучения для многозадачности.
+4. Разработать механизм адаптации к изменениям среды.
 
-### 6. Сохранение информации в базу знаний:
+### 6. Сохранение информации в базу знаний
 
-Всё, что создается, понимается и делается, будет сохраняться в файле `data.txt` в папке `knowledge` для последующего использования и анализа.
+При создании новых знаний, понимания или действий, сохранять соответствующую информацию в `knowledge_base.db`.
 
-Отлично! План по развитию твоего ИИ готов. Можешь предложить дополнения или изменения, если это необходимо.
+Таким образом, я готов начать выполнение поставленных задач по саморазвитию и самообучению.
