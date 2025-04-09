@@ -1,5 +1,3 @@
-Sure! Вот пример минимального Flask-приложения:
-
 ```python
 from flask import Flask, jsonify
 
@@ -12,5 +10,3 @@ def hello():
 if __name__ == '__main__':
     app.run()
 ```
-
-Сохраните этот код в файле `app.py` и запустите его. После этого вы сможете обратиться к маршруту `/hello` и получить JSON-ответ `{"message": "Hello from bot!"}`.
