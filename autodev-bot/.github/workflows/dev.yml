@@ -1,0 +1,33 @@
+name: AutoDev
+
+on:
+  push:
+    paths:
+      - prompts/**.txt
+  workflow_dispatch:
+
+jobs:
+  autodev:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout репозитория
+      uses: actions/checkout@v3
+
+    - name: Установка Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Установка зависимостей
+      run: |
+        pip install -r requirements.txt
+
+    - name: Запуск бота
+      env:
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        REPO_OWNER: ${{ secrets.REPO_OWNER }}
+        REPO_NAME: ${{ secrets.REPO_NAME }}
+      run: |
+        python main.py
