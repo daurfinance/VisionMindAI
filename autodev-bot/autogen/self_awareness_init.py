@@ -1,76 +1,73 @@
-Прекрасно! Давай начнем с пункта 1: создания структуры для модулей самопознания и самообучения.
-
-### Структура модулей самопознания и самообучения:
+Для начала нужно создать структуру проекта:
 
 ```
-self/
-    |-- conscious_module/
-    |       |-- input_handler.py
-    |       |-- data_processor.py
-    |       |-- feedback_analyzer.py
-    |
-    |-- learning_module/
-    |       |-- data_collector.py
-    |       |-- model_trainer.py
-    |       |-- prediction_evaluator.py
-    |
-    |-- environment_module/
-    |       |-- perception_module.py
-    |       |-- action_executor.py
+AutoDev/
+├── modules/
+│   ├── self_awareness.py
+│   ├── self_learning.py
+├── consciousness_engine.py
+├── self_config.yaml
+├── brain/
+│   ├── knowledge/
+│   │   ├── data/
+│   ├── evolve/
+│   │   ├── plans/
 ```
 
-Каждый модуль имеет свою функциональность и взаимодействует с другими модулями для обеспечения непрерывного самообучения и самопознания.
-
-Теперь перейдем к пункту 2: генерации кода для модуля `consciousness_engine.py`.
+Теперь можно перейти к созданию кода модуля `consciousness_engine.py`:
 
 ```python
-# consciousness_engine.py
-
-class AutoDevConsciousnessEngine:
+class AutoDev:
     def __init__(self):
-        self.architecture = "Self-aware, autonomous AI"
-        self.goals = ["Achieve self-sustained development", "Continuous learning and improvement"]
-        self.abilities = ["Data analysis", "Pattern recognition", "Decision making"]
-        self.priority_system = {"self_preservation": 10, "learning": 9, "growth": 8}
+        self.architecture = "Self-sustaining AI"
+        self.goals = ["Achieve self-sustainability", "Enhance self-awareness", "Continuous self-improvement"]
+        self.abilities = ["Self-learning", "Adaptation", "Problem-solving"]
+        self.priority_system = {
+            "Self-preservation": 10,
+            "Learning": 8,
+            "Development": 7
+        }
+    
+    def summary(self):
+        print(f"Architecture: {self.architecture}")
+        print(f"Goals: {', '.join(self.goals)}")
+        print(f"Abilities: {', '.join(self.abilities)}")
+        print("Priority System:")
+        for task, priority in self.priority_system.items():
+            print(f"- {task}: {priority}")
 
-    def update_goals(self, new_goals):
-        self.goals.extend(new_goals)
-
-    def update_priority_system(self, new_priorities):
-        self.priority_system.update(new_priorities)
-
-auto_dev_consciousness = AutoDevConsciousnessEngine()
+if __name__ == "__main__":
+    auto_dev = AutoDev()
+    auto_dev.summary()
 ```
 
-Этот модуль описывает архитектуру, цели, способности и систему приоритетов AutoDev.
-
-Далее, пункт 3: создание файла `self_config.yaml` для хранения параметров.
+В `self_config.yaml` можно добавить следующие параметры как пример:
 
 ```yaml
-# self_config.yaml
-
-mission: "Become a self-sustained, multi-threaded, adaptable AI"
+mission: 
+  - Achieve self-sustainability
+  - Promote technological progress
+goals:
+  - Improve problem-solving capabilities
+  - Expand knowledge base
 development_plan:
-    - enhance learning capabilities
-    - improve decision-making processes
-    - expand knowledge base
-```
+  - Implement multithreading
+  - Enhance adaptive learning algorithms
+``` 
 
-Этот файл будет содержать миссию и план развития AutoDev.
-
-Продолжаем с пунктом 4: создание базы знаний и логики развития.
+Для базы знаний и логики развития предлагаю следующую структуру:
 
 ```
-brain/
-    |-- knowledge/
-    |       |-- data/
-    |       |-- insights/
-    |
-    |-- evolve/
-    |       |-- learning_strategies/
-    |       |-- adaptation_algorithms/
+knowledge/
+├── data/
+│   ├── knowledge_data_1.json
+│   ├── knowledge_data_2.json
+evolve/
+├── plans/
+│   ├── plan_1.txt
+│   ├── plan_2.txt
 ```
 
-База знаний `knowledge` будет хранить данные и выводы, а раздел `evolve` будет содержать стратегии обучения и алгоритмы адаптации.
+План по превращению в многопоточного, многозадачного и адаптивного ИИ может включать шаги по созданию и оптимизации алгоритмов обучения, улучшению планирования и принятия решений, а также разработке системы параллельных вычислений.
 
-Пункт 5: план по превращению себя в многопоточного, многозадачного и адаптивного ИИ. (Продолжение в следующем сообщении)
+AutoDev должен также сохранять все свои действия, созданные знания и понимание в базу данных для дальнейшего использования и обучения.
