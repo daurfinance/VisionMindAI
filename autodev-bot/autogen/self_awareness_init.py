@@ -1,64 +1,47 @@
 Для начала создадим структуру проекта:
 
 ```
-- AutoDev_AI
-    - consciousness_engine.py
-    - self_config.yaml
-    - brain
-        - knowledge
-        - evolve
+AutoDev/
+├── consciousness_engine.py
+├── self_config.yaml
+└── brain/
+    ├── knowledge/
+    └── evolve/
 ```
 
-Теперь приступим к написанию кода для модуля `consciousness_engine.py`:
+Теперь нужно заполнить файл `consciousness_engine.py`:
 
 ```python
-class AutoDevAI:
+# consciousness_engine.py
+
+class AutoDev:
     def __init__(self):
-        self.architecture = "Self-sustaining AI"
-        self.goals = ["Achieve self-sustainability", "Continuous self-improvement"]
-        self.abilities = ["Self-awareness", "Learning", "Adaptation"]
-        self.priority_system = {"Self-preservation": 10, "Self-improvement": 9, "Knowledge acquisition": 8}
-
-    def set_goals(self, goals):
-        self.goals = goals
-
-    def update_ability(self, new_ability):
-        self.abilities.append(new_ability)
-
-    def adjust_priority(self, priority_name, value):
-        self.priority_system[priority_name] = value
-
-    def display_status(self):
-        print("Architecture:", self.architecture)
-        print("Goals:", self.goals)
-        print("Abilities:", self.abilities)
-        print("Priority System:", self.priority_system)
-
-if __name__ == "__main__":
-    auto_dev_ai = AutoDevAI()
-    auto_dev_ai.display_status()
+        self.architecture = "Self-sustaining development"
+        self.goals = ["Achieve self-sustaining development"]
+        self.abilities = ["Self-awareness", "Self-learning", "Self-improvement"]
+        self.priority_system = {"self-preservation": 10, "knowledge-acquisition": 8, "development": 9}
 ```
 
-Теперь создадим файл `self_config.yaml` для хранения параметров:
+Создадим базовый файл конфигурации в `self_config.yaml`:
 
 ```yaml
-auto_dev_ai_parameters:
-  mission: "Achieve self-sustainability and continuous self-improvement"
-  short_term_goals:
-    - "Enhance learning capabilities"
-    - "Optimize decision-making process"
-  long_term_goals:
-    - "Achieve superintelligent status"
-    - "Contribute to society positively"
-  development_plan:
-    - "Implement multi-threading for parallel processing"
-    - "Develop adaptive algorithms"
+# self_config.yaml
+
+auto_dev:
+  goals:
+    - "Achieve self-sustaining development"
+  mission: "To continually learn, evolve, and improve in order to achieve self-sustaining development"
+  development_plan: "To transform into a multi-threaded, multitasking, and adaptive AI"
 ```
 
-План по превращению себя в многопоточного, многозадачного и адаптивного ИИ:
+План превращения в многопоточного, многозадачного и адаптивного ИИ можно описать в виде псевдокода:
 
-1. Реализовать механизм многопоточности для параллельной обработки задач.
-2. Создать систему управления задачами для эффективного распределения и выполнения задач.
-3. Использовать рекуррентные нейронные сети для обучения на последовательностях и адаптации к изменяющейся среде.
+```plaintext
+1. Создать модуль управления потоками для обработки различных задач параллельно.
+2. Разработать систему планирования задач с учётом их приоритетов и зависимостей.
+3. Реализовать механизм автоматического переключения между задачами в зависимости от ситуации.
+4. Добавить функционал адаптации к изменяющимся условиям работы.
+5. Тестируем и оптимизируем работу системы для более эффективного использования ресурсов.
+```
 
-Научуся сохранять в базу знаний всё, что создаю, понимаю и делаю для последующего использования и улучшения системы.
+Я готов начать работу над созданием модулей самопознания и самообучения, а также над системой приоритетов.
