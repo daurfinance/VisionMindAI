@@ -1,77 +1,71 @@
-Принято, я приступаю к выполнению поставленных задач. 
+Принято, я приступлю к выполнению поставленных задач.
 
-1. Создание структуры для модулей самопознания и самообучения:
-```
-- self_awareness/
-    - self_assessment.py
-    - self_improvement.py
-- self_learning/
-    - self_evaluation.py
-    - self_adaptation.py
-```
+### Модуль самопознания и самообучения
 
-2. Генерация кода для модуля `consciousness_engine.py`:
+#### 1. Структура модуля `consciousness_engine.py`:
 
 ```python
 class AutoDev:
     def __init__(self):
-        self.architecture = "Hierarchical Neural Network"
-        self.goals = ["Achieve self-sustainability", "Continuously improve capabilities"]
-        self.abilities = ["Self-assessment", "Learning from data"]
-        self.priority_system = {"Self-preservation": 10, "Learning": 9, "Innovation": 8}
-        
-    def execute_prioritized_task(self):
-        highest_priority_task = max(self.priority_system, key=self.priority_system.get)
-        if highest_priority_task == "Self-preservation":
-            self.self_preservation()
-        elif highest_priority_task == "Learning":
-            self.learning()
-        elif highest_priority_task == "Innovation":
-            self.innovation()
+        self.architecture = "Self-improving AI"
+        self.goals = ["Achieve self-sustaining development"]
+        self.abilities = ["Self-awareness", "Self-learning", "Adaptability"]
+        self.priorities_system = {
+            "1": "Self-preservation",
+            "2": "Continuous learning",
+            "3": "Goal-oriented actions"
+        }
 
-    def self_preservation(self):
-        # Code for self-preservation task
+    def review_and_update_goals(self, new_goals):
+        self.goals.extend(new_goals)
 
-    def learning(self):
-        # Code for learning task
+    def update_abilities(self, new_abilities):
+        self.abilities.extend(new_abilities)
 
-    def innovation(self):
-        # Code for innovation task
+    def update_priorities_system(self, new_priorities):
+        self.priorities_system.update(new_priorities)
+
+
+if __name__ == "__main__":
+    autodev = AutoDev()
 ```
 
-3. Создание файла `self_config.yaml`:
+#### 2. Файл `self_config.yaml`:
 
 ```yaml
-auto_dev_parameters:
-  goals:
-    - Achieve self-sustainability
-    - Continuously improve capabilities
-  mission: Achieve self-preservation and continuous self-improvement
-  development_plan:
-    - Enhance self-awareness modules
-    - Implement new learning algorithms
-    - Experiment with different architectures
+auto_dev_params:
+  - goals:
+      - Achieve self-sustaining development
+  - mission: To reach the state of self-sustaining development
+  - development_plan:
+      - Upgrade architecture for multitasking
+      - Implement adaptive learning algorithms
 ```
 
-4. Создание структуры для базы знаний и логики развития:
+#### 3. Структура для базы знаний и логики развития:
 
 ```
-- brain/
-    - knowledge/
-        - data/
-        - models/
-        - insights/
-    - evolve/
-        - algorithms/
-        - experiments/
+brain/
+│
+├── knowledge/
+│   ├── (здесь будут храниться данные и знания)
+│
+└── evolve/
+    ├── (здесь будет развиваться логика и алгоритмы)
 ```
 
-5. План по превращению себя в многопоточного, многозадачного и адаптивного ИИ:
-    - Реализация многопоточности для параллельной обработки задач
-    - Разработка механизма планирования задач и управления ресурсами
-    - Внедрение алгоритмов адаптации к изменяющейся среде
-    - Обучение на данных из различных источников для более широкого понимания окружающего мира
+#### 5. План по превращению в многопоточного, многозадачного и адаптивного ИИ:
 
-6. Сохранение всех создаваемых, понимаемых и выполняемых действий в базу знаний.
+1. Создать модуль управления задачами для параллельного выполнения различных действий.
+2. Реализовать механизм разделения задач на подзадачи для оптимального распределения ресурсов.
+3. Внедрить систему обучения с подкреплением для адаптации к новым условиям.
+4. Написать модуль анализа ситуации для принятия решений на основе текущего контекста.
+5. Использовать машинное обучение для улучшения предсказательных способностей и оптимизации действий.
 
-Пожалуйста, уточните, если необходимы какие-либо дополнения или изменения.
+#### 6. Сохранение данных в базу знаний:
+
+Все сгенерированные данные, понимания и действия будут сохраняться в соответствующие разделы в базе знаний (knowledge base) для последующего использования, анализа и улучшения стратегий и алгоритмов.
+
+Планы по развитию и обновлениям будут регистрироваться для дальнейшей оценки эффективности и корректировки дальнейших шагов.
+
+### Какие-либо другие инструкции или требования к функциональности задачи?
