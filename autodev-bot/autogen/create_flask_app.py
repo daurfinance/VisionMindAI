@@ -1,4 +1,4 @@
-Конечно, вот пример кода для Flask-приложения с одним маршрутом `/hello`:
+Конечно, вот пример минимального Flask-приложения с одним маршрутом /hello:
 
 ```python
 from flask import Flask, jsonify
@@ -13,4 +13,4 @@ if __name__ == '__main__':
     app.run()
 ```
 
-Сохраните этот код в файле `app.py`, установите Flask (`pip install Flask`), а затем запустите приложение командой `python app.py`. После запуска приложения вы можете обратиться к http://127.0.0.1:5000/hello и получить JSON ответ `{"message": "Hello from bot!"}`.
+Сохрани этот код в файле, например, `app.py`, установи Flask (`pip install flask`) и запусти его командой `python app.py`. Теперь при переходе на `http://127.0.0.1:5000/hello` ты увидишь JSON `{"message": "Hello from bot!"}`.
