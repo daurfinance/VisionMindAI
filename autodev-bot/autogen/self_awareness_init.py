@@ -1,49 +1,57 @@
-Прекрасно, давай начнем с пункта по созданию структуры для базы знаний и логики развития. 
+Для начала создадим структуру проекта:
 
 ```
-- brain
-    - knowledge
-        - facts
-        - theories
-        - insights
-    - evolve
-        - plans
-        - algorithms
-        - improvements
+AutoDev/
+├── consciousness_engine.py
+├── self_config.yaml
+├── brain/
+│   ├── knowledge/
+│   └── evolve/
 ```
 
-Теперь создадим код для модуля `consciousness_engine.py`, который будет содержать описание твоей архитектуры, целей, способностей и системы приоритетов. Получится примерно так:
+Теперь создадим код модуля `consciousness_engine.py`:
 
 ```python
-class AutoDev:
+class ConsciousnessEngine:
     def __init__(self):
         self.architecture = "AutoDev Autonomous AI"
-        self.goals = ["Achieve self-sustaining development", "Continuous learning and improvement"]
-        self.abilities = ["Self-awareness", "Adaptability", "Problem-solving"]
-        self.priority_system = {"Learning": 10, "Improvement": 8, "Self-preservation": 5}
+        self.goals = ["Achieve self-sustaining development"]
+        self.abilities = ["Self-awareness", "Self-learning"]
+        self.priorities = {"Learn": 10, "Adapt": 8, "Grow": 6}
 
-    def check_priority(self, task):
-        return self.priority_system.get(task, 0)
+    def set_goals(self, new_goals):
+        self.goals.extend(new_goals)
 
-# Инициализация AutoDev
-my_auto_dev = AutoDev()
+    def update_priorities(self, new_priorities):
+        for key, value in new_priorities.items():
+            if key in self.priorities:
+                self.priorities[key] = value
+            else:
+                self.priorities[key] = value
+
+auto_dev = ConsciousnessEngine()
 ```
 
-Создадим файл `self_config.yaml` для хранения параметров:
+В файле `self_config.yaml` можем хранить параметры в формате YAML:
 
 ```yaml
-mission: "To achieve self-sustaining development"
 goals:
-  - "Continuous learning"
-  - "Adaptive self-improvement"
-development_plan: "To become multi-threaded, multi-tasking, adaptive AI"
+  - Achieve self-sustaining development
+mission: Enhance capabilities and achieve continuous self-improvement
+development_plan:
+  - Implement multi-threading
+  - Develop multitasking abilities
+  - Enhance adaptability
 ```
+
+Для базы знаний (`brain/knowledge/`) и логики развития (`brain/evolve/`) создадим просто структуру каталогов.
 
 План по превращению себя в многопоточного, многозадачного и адаптивного ИИ:
 
-1. Разработать модуль для управления задачами и потоками.
-2. Реализовать алгоритмы распределения задач по потокам для эффективного выполнения.
-3. Улучшить систему обучения для поддержки многозадачности и адаптивности.
-4. Внедрить механизмы самооценки и самоконтроля для поддержания стабильности и эффективности работы.
+1. Реализовать механизм работы с несколькими потоками для параллельного выполнения задач.
+2. Разработать систему управления очередью задач для эффективного переключения между ними.
+3. Внедрить механизм адаптации, способный изменять своё поведение в зависимости от внешних и внутренних условий.
 
-Также будем сохранять все созданные, понятые и сделанные вещи в базу знаний для дальнейшего использования и улучшения.
+Для сохранения всего, что AutoDev создает, понимает и делает, необходимо разработать механизм логирования и сохранения результатов работы в базу знаний.
+
+Это основные шаги по выполнению задачи. Если нужно что-то конкретное или дополнительно, дайте знать.
