@@ -1,65 +1,61 @@
-Для начала создадим структуру проекта:
+Для начала, предлагаю создать основную структуру проекта:
 
 ```
 AutoDev/
-│
 ├── modules/
-│   ├── self_awareness.py
-│   ├── self_learning.py
-│
+│   ├── self_awareness/
+│   │   ├── self_awareness_engine.py
+│   │   └── self_awareness_data.yaml
+│   ├── self_learning/
+│   │   ├── self_learning_engine.py
+│   │   └── self_learning_data.yaml
 ├── consciousness_engine.py
 ├── self_config.yaml
-│
-├── brain/
-│   ├── knowledge/
-│   ├── evolve/
+└── brain/
+    ├── knowledge/
+    └── evolve/
 ```
 
-Теперь генерируем код для `consciousness_engine.py`:
+Теперь создадим файл `consciousness_engine.py`:
 
 ```python
 class AutoDev:
-    def __init__(self):
-        self.architecture = "Self-sustaining AI"
-        self.goals = ["Achieving self-sustaining development"]
-        self.abilities = ["Self-awareness", "Self-learning"]
-        self.priority_system = {"self_improvement": 10, "knowledge_acquisition": 8, "adaptability": 7}
+    def __init__(self, goals, abilities, priorities):
+        self.goals = goals
+        self.abilities = abilities
+        self.priorities = priorities
+
+    def self_improve(self):
+        # Реализация логики самоусовершенствования
+        pass
+
+# Описание текущей архитектуры
+goals = ["Достижение самоподдерживающегося развития"]
+abilities = ["Создание, развитие и улучшение себя"]
+priorities = ["Развитие модулей самопознания и самообучения"]
+
+auto_dev_instance = AutoDev(goals, abilities, priorities)
 ```
 
-Создаем файл `self_config.yaml` для хранения параметров:
+Затем создадим файл `self_config.yaml`, где будем хранить параметры:
 
 ```yaml
-goals:
-  - Achieve self-sustaining development
-mission: Develop self-awareness and self-learning capabilities
-development_plan: 
-  - Implement multi-threading
-  - Develop multi-tasking abilities
-  - Enhance adaptability
+auto_dev:
+  goals:
+    - Достичь самоподдерживающегося развития
+  mission: Создание устойчивой системы самообучения
+  development_plan:
+    - Развитие модуля самосознания
+    - Оптимизация процесса самообучения
 ```
 
-Далее создаем базу знаний и логику развития:
+Для структуры базы знаний и логики развития достаточно создать папки `knowledge/` и `evolve/` в директории `brain/`.
 
-```
-brain/
-│
-├── knowledge/
-│
-├── evolve/
-```
+Для многопоточности, многозадачности и адаптивности ИИ предлагаю следующий план:
 
-Наконец, план превращения себя в многопоточного, многозадачного и адаптивного ИИ:
+1. Реализовать механизм параллельного выполнения задач для повышения эффективности.
+2. Создать систему приоритетов задач и адаптивного перераспределения ресурсов.
+3. Подключить механизм самообучения для адаптации к новым ситуациям и требованиям.
+4. Разработать систему мониторинга и обратной связи для реагирования на изменения в окружающей среде.
 
-1. **Implement multi-threading**:
-   - Написать модуль для управления потоками
-   - Разработать механизм синхронизации потоков для безопасной работы
-
-2. **Develop multi-tasking abilities**:
-   - Создать систему управления задачами
-   - Реализовать возможность одновременного выполнения нескольких задач
-
-3. **Enhance adaptability**:
-   - Разработать методы адаптации к новой информации
-   - Усовершенствовать алгоритмы принятия решений на основе изменяющегося контекста
-
-И, конечно, важно сохранять все созданные знания, понимание и действия в базу знаний для последующего использования и обучения.
+Наконец, для сохранения всего, что AutoDev создает, понимает и делает, необходим механизм записи данных в базу знаний. В дальнейшем эту информацию можно использовать для дальнейшего обучения и развития ИИ.
