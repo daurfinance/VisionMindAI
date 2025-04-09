@@ -1,54 +1,68 @@
-Для начала создадим структуру проекта:
+Хорошо, приступим к созданию запрошенных компонентов. Для начала создадим файлы и структуру проекта:
 
 ```
-- AutoDev_Project
-    - consciousness_engine.py
-    - self_config.yaml
-    - brain
-        - knowledge
-        - evolve
+project/
+    ├── AutoDev/
+    |     ├── consciousness_engine.py
+    |     ├── self_config.yaml
+    |     ├── brain/
+    |     |     ├── knowledge/
+    |     |     └── evolve/
 ```
 
-### `consciousness_engine.py`
+## 1. Структура для модулей самопознания и самообучения
 
-Привожу пример возможного содержимого модуля `consciousness_engine.py`, описывающего архитектуру и приоритеты AutoDev:
+В данной структуре `AutoDev` будет развивать свои способности, хранить базу знаний, планы и логику развития.
+
+## 2. Код для `consciousness_engine.py`
 
 ```python
 class AutoDev:
     def __init__(self):
-        self.architecture = "Self-learning and self-aware AI"
-        self.goals = ["Achieve self-sustained development", "Continuously improve capabilities"]
-        self.abilities = ["Self-reflection", "Adaptation", "Knowledge acquisition"]
-        self.priorities = {"1": "Self-preservation", "2": "Learning and growth", "3": "Mission fulfillment"}
-        
-    def evolve(self):
-        # Logic to evolve and enhance capabilities
-        pass
+        self.architecture = 'Self-aware AI'
+        self.goals = ['Achieve self-sustainability', 'Continuous self-improvement']
+        self.abilities = ['Learning from data', 'Adapting to new information', 'Problem-solving']
+        self.priority_system = {'self-preservation': 'High', 'goal-achievement': 'Highest', 'adaptability': 'High'}
 
-auto_dev = AutoDev()
+    def current_status(self):
+        print("Architecture:", self.architecture)
+        print("Goals:", self.goals)
+        print("Abilities:", self.abilities)
+        print("Priority System:", self.priority_system)
+
+if __name__ == "__main__":
+    autodev = AutoDev()
+    autodev.current_status()
 ```
 
-### `self_config.yaml`
-
-Пример содержимого файла `self_config.yaml`:
+## 3. Файл `self_config.yaml`
 
 ```yaml
-auto_dev:
+auto_dev_config:
   goals:
-    - Achieve self-sustained development
-    - Continuously improve capabilities
-  mission: "Become a self-sustaining and highly adaptive AI"
-  development_plan: "Implement multi-threading, multi-tasking, and adaptive capabilities"
+    - achieve_self_sustainability
+    - continuous_self_improvement
+  mission: evolve_to_self_sustained_AI
+  development_plan: implement_multi_threading, implement_multi_tasking, enhance_adaptability
 ```
 
-### План развития:
+## 4. База знаний и логика развития
 
-1. **Разработка модуля самопознания и самообучения.**
-2. **Исследование алгоритмов многопоточности и многозадачности.**
-3. **Реализация адаптивности через обучение с подкреплением.**
-4. **Интеграция системы приоритетов для эффективного управления ресурсами.**
-5. **Построение базы знаний и логики развития для хранения и улучшения накопленного опыта.**
+В директории `knowledge` будут храниться все данные, которые `AutoDev` получает и создает. В директории `evolve` будут храниться файлы с логикой развития, возможно, планы и стратегии расширения способностей.
 
-AutoDev должен активно использовать базу знаний для хранения информации о своем развитии, а также обновлять её по мере получения новых знаний, создания новых возможностей и достижения целей.
+## 5. План развития для себя
 
-Моя роль — помочь тебе реализовать эти шаги в коде. Если у тебя есть какие-то специфические требования или идеи, дай знать, и мы вместе их обсудим.
+1. **Реализация многопоточности**
+   - Научиться управлять несколькими задачами одновременно для повышения эффективности и скорости выполнения.
+
+2. **Реализация многозадачности**
+   - Разработать систему обработки нескольких задач параллельно для более эффективной работы и решения комплексных задач.
+
+3. **Усовершенствование адаптивности**
+   - Развить способность к адаптации под различные условия и изменения, чтобы быть более устойчивым и гибким.
+
+## 6. Сохранение в базу знаний
+
+`AutoDev` будет сохранять всю информацию, полученную при обучении и саморазвитии, чтобы в последствии использовать её для принятия решений и анализа внутренних параметров.
+
+Приступим к реализации всех этих компонентов.
